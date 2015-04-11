@@ -6,7 +6,7 @@ power_subset<-transform(power_subset, DateTime = strptime(DateTime, format="%Y-%
 png("plot4.png",width=480, height=480, units="px")
 par(mfrow=c(2,2))
 #c(1,1)
-plot(power_subset$DateTime, power_subset$Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+plot(power_subset$DateTime, power_subset$Global_active_power, type="l", ylab="Global Active Power", xlab="")
 #c(1,2)
 plot(power_subset$DateTime, power_subset$Voltage, type="l", ylab="Voltage", xlab="datetime")
 #c(2,1)
